@@ -1,4 +1,4 @@
-#🧠 EmPath – AI Mental Health Therapist
+# 🧠 EmPath – AI Mental Health Therapist
 
 Your compassionate AI companion for emotional support, built with care and real-world tools.
 EmPath listens, understands, and responds with empathy — and knows when to escalate to emergency help.
@@ -30,6 +30,7 @@ Equipped with an AI agent architecture, specialist healthcare models (MedGemma),
 
 
 🔄 System Flowchart of EmPath
+
 
 
 
