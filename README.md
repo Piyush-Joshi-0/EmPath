@@ -31,8 +31,90 @@ Equipped with an AI agent architecture, specialist healthcare models (MedGemma),
 🔄 System Flowchart of EmPath
 
 
+## 🚀 Features  
+
+- ✅ Empathetic conversations powered by **MedGemma (LLM)** via **Ollama**  
+- ✅ Crisis detection → triggers **Telegram Emergency Alerts** (Twilio optional)  
+- ✅ Nearby therapist recommendations (location-based)  
+- ✅ Full-stack system with **Streamlit frontend + FastAPI backend**  
+- ✅ Modular AI Agent built with **LangChain + LangGraph**  
+
+---
+
+## ⚙️ Tech Stack  
+
+- **Frontend:** Streamlit (`frontend.py`)  
+- **Backend:** FastAPI (`main.py`)  
+- **AI Agent:** LangGraph + LangChain (`ai_agent.py`)  
+- **LLM:** Google MedGemma (via Ollama)  
+- **Tools:**  
+  - Telegram bot alerts  
+  - Therapist lookup  
+  - (Optional) Twilio calls for emergencies  
+- **Config:** API keys & secrets stored in `config.py`  
 
 
+## 🏗️ Project Structure  
 
+```bash
+backend/
+│── ai_agent.py      # AI agent with tools (chat, therapists, emergency)
+│── config.py        # API keys & emergency contacts
+│── main.py          # FastAPI backend
+│── tools.py         # MedGemma queries + alert tools
+frontend.py          # Streamlit frontend UI
+pyproject.toml       # Dependencies
+README.md            # Project documentation
+AI Therapist.pdf     # Architecture overview
+```
+## 🔧 Setup & Installation  
 
+### 1️⃣ Clone the repo  
+```bash
+git clone https://github.com/YOUR_USERNAME/empath-ai-therapist.git
+cd empath-ai-therapist
+```
+### 2️⃣ Setup environment (using uv)
+```bash
+uv sync
+```
+This will:  
+- ✔️ Create virtual environment  
+- ✔️ Install dependencies from `pyproject.toml`  
+
+---
+
+### 3️⃣ Configure API Keys  
+
+Edit `backend/config.py` and add your:  
+- **GROQ_API_KEY** (or OpenAI if you switch models)  
+- **Telegram Bot Token & Chat ID**  
+- *(Optional)* Twilio credentials  
+
+---
+
+### 4️⃣ Run the Backend  
+```bash
+uv run backend/main.py
+```
+### 5️⃣ Run the Frontend
+```bash
+uv run streamlit run frontend.py
+```
+## 📡 How It Works  
+
+1. User sends a message in the **Streamlit chat UI**  
+2. Message goes to **FastAPI backend** (`/ask`)  
+3. AI Agent decides:  
+   - 💬 Use **MedGemma** for normal responses  
+   - 🧑‍⚕️ Recommend **therapists** if requested  
+   - 🚨 Trigger **emergency alert** if suicidal/self-harm intent detected  
+4. Response + tool used are displayed in the UI  
+
+---
+
+## 🔐 Safety Note  
+
+This project is **not a replacement for professional help**.  
+If you are struggling with mental health issues, please reach out to a qualified therapist or helpline immediately.  
 
