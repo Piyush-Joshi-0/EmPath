@@ -25,11 +25,11 @@ Equipped with an AI agent architecture, specialist healthcare models (MedGemma),
 
 ## 📲 Telegram emergency alert sent to a contact
 
-![WhatsApp Image 2025-09-01 at 20 42 45_c84bce70](https://github.com/user-attachments/assets/f4641d35-743a-403d-a153-882c5bb203e7)
-
+![WhatsApp Image 2025-09-01 at 21 06 44_44e49a0c](https://github.com/user-attachments/assets/3de1c4af-39fc-45d3-9b2f-fd1b4515f4b0)
 
 
 🔄 System Flowchart of EmPath
+
 
 
 
