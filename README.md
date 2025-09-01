@@ -8,11 +8,7 @@ Equipped with an AI agent architecture, specialist healthcare models (MedGemma),
 
 🚀 Quick Start
 
-Clone the repo and run:
 
-```
-git clone https://github.com/AIwithhassan/safespace-ai-therapist.git
-```
 
 # Setup UV if not already:
 
@@ -27,3 +23,4 @@ That’s it. This command:
 Creates a virtual environment (if needed)
 Installs all dependencies from uv.lock
 Sets up the full environment exactly as intended
+
